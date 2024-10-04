@@ -1,26 +1,26 @@
 metadata:
-  title url: https://ptla.org 
-  title: Pine Tree Legal Assistance Forms Project
-  short title: PTLA Forms Project
+  title url: https://statesidelegal.org 
+  title: StatesideLegal Forms Project
+  short title: StatesideLegal Forms Project
   #logo: |
-  #  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli"><img src="/packagestatic/docassemble.ILAO/ilao.logo.noname.25.png" class="ilao_icon" alt="ILAO Icon"><h1 style="display:inline; font-family: 'Muli'; margin:10px;font-size:20px;color:#fff">Easy Forms</h1>
+  #  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli"><img src="/packagestatic/docassemble.ILAO/ilao.logo.noname.25.png" class="ilao_icon" alt="Stateside logo"><h1 style="display:inline; font-family: 'Muli'; margin:10px;font-size:20px;color:#fff">Easy Forms</h1>
 ---
 #modules:
 #  - .toolbox
 ---
 include:
   - docassemble.AssemblyLine:assembly_line.yml
-  - custom_ptla_theme_ngb.yml
+  - custom_ssl_theme.yml
 ---
 features:
-  css: ptlatheme.css
+  css: ssltheme.css
   question back button: True
 ---
 default screen parts:
   logo: |
     <div class="title-container">
       <div class="al-logo">
-        <img src="https://apps.ptla.org/playgroundstatic/AppsPTLAHomepage/1/Green_Logo_-_Circle_Cropped.png">
+        <img src="https://apps.statesidelegal.org/playgroundstatic/LandingScreenDefault/4/Stateside-Legal-logopng.png">
       </div>
       <div class="al-title">
         <div class="title-row-1">${ all_variables(special='metadata').get('title','').rstrip() }</div>
@@ -30,7 +30,7 @@ default screen parts:
   short logo: |
     <div class="title-container">
       <div class="al-logo">
-        <img src="https://apps.ptla.org/playgroundstatic/AppsPTLAHomepage/1/Green_Logo_-_Circle_Cropped.png">
+        <img src="https://apps.statesidelegal.org/playgroundstatic/LandingScreenDefault/4/Stateside-Legal-logopng.png">
       </div>
       <div class="al-title">
         <div class="title-row-1">${ all_variables(special='metadata').get('short title','').rstrip() }</div>
@@ -42,11 +42,11 @@ default screen parts:
 id: home
 mandatory: True
 question: |
-  **Pine Tree Legal Assistance Forms Project**
+  **StatesideLegal Forms Project**
 subquestion: |
-  <p>Welcome to PTLA's Forms Project!</p> <p>This site hosts our <a href="https://docassemble.org/">DocAssemble</a> interviews to help people with legal issues like debt collection, security deposits, and public benefits like SNAP or TANF.</p> <p><strong>These interviews are not legal advice - you should talk with a lawyer if possible before making decisions or taking legal action.</strong> But if you are going to court or handling an issue on your own, these tools may be helpful.</p> <p>For more easy to read legal information, or to contact Pine Tree Legal Assistance for help, visit our website <a href="https://ptla.org">PTLA.org</a></p>
+  <p>Welcome to StatesideLegal's Forms Project!</p> <p>This site hosts our <a href="https://docassemble.org/">DocAssemble</a> interviews to people with military experience with legal issues like VA debt collection, security deposits, and leases.</p> <p><strong>These interviews are not legal advice - you should talk with a lawyer if possible before making decisions or taking legal action.</strong> But if you are going to court or handling an issue on your own, these tools may be helpful.</p> <p>For more easy to read legal information, or to find an attorney who might be able to help, visit our website <a href="https://statesidelegal.org">StatesideLegal.org</a></p>
   <h3>Or try one of our tools!</h3>
-  <h2>Welcome to PTLA's Forms Project!</h2> <p>This site hosts our <a href="https://docassemble.org/">Docassemble</a> interviews to help Maine people with legal issues like debt collection, security deposits, and public benefits like SNAP or TANF.</p> <p><strong>These interviews are not legal advice - you should talk with a lawyer if possible before making decisions or taking legal action. </strong> But if you are going to court or handling an issue on your own, these tools may be helpful.</p> <p>For more easy to read legal information, or to contact Pine Tree Legal Assistance for help, visit our website <a href="https://ptla.org">PTLA.org</a></p>
+  <h2>Welcome to StatesideLegal's Forms Project!</h2> <p>This site hosts our <a href="https://docassemble.org/">Docassemble</a> interviews to help Maine people with legal issues like debt collection, security deposits, and public benefits like SNAP or TANF.</p> <p><strong>These interviews are not legal advice - you should talk with a lawyer if possible before making decisions or taking legal action. </strong> But if you are going to court or handling an issue on your own, these tools may be helpful.</p> <p>For more easy to read legal information, or to contact Pine Tree Legal Assistance for help, visit our website <a href="https://statesidelegal.org">PTLA.org</a></p>
   <h3>Try one of our tools!</h3>
   <ul>
   <li><a href="https://apps.ptla.org/start/snapcalc/">Maine SNAP Benefits Estimator</a></li>
